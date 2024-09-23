@@ -374,6 +374,7 @@ background-image: none !important;
             margin: 0;
             font-family: Rubi, sans-serif;
         }
+
         .countdown-section {
             display: flex;
             align-items: center;
@@ -384,20 +385,39 @@ background-image: none !important;
             background-position: center;
             color: white;
             text-align: center;
+            padding: 20px;
         }
 
         #countdown {
             display: flex;
             gap: 20px;
+            flex-wrap: wrap; /* Asegura que el contenido se ajuste en pantallas pequeñas */
         }
 
         .time {
-            font-size: 4em; /* Aumentar el tamaño de los números */
+            font-size: 4em;
             font-weight: bold;
         }
 
         .label {
-            font-size: 1.5em; /* Aumentar el tamaño de las letras */
+            font-size: 1.5em;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .time {
+                font-size: 2.5em; /* Tamaño de los números más pequeño para móviles */
+            }
+
+            .label {
+                font-size: 1.2em; /* Reducir tamaño de las letras */
+            }
+
+            .countdown-section {
+                height: auto;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
         }
     </style>
 </head>
@@ -440,6 +460,7 @@ background-image: none !important;
     </script>
 </body>
 </html>
+
 
 <section class="elementor-section elementor-inner-section elementor-element elementor-element-65440978 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="65440978" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;opacity-tilt&quot;}">
     <div class="elementor-shape elementor-shape-bottom" data-negative="false">
