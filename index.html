@@ -41,6 +41,60 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A800%7CForum%3A400%7CRaleway%3A400&#038;display=fallback&#038;ver=4.7.3' media='all' />
 <link rel='stylesheet' id='pa-frontend-css' href='https://invitacionmx.com/wp-content/uploads/premium-addons-elementor/pa-frontend-249dc34d3.min.css?ver=1722960390' media='all' />
 
+<style>
+    body {
+        margin: 0;
+        font-family: Rubi, sans-serif;
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    .countdown-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Usa el 100% del alto de la ventana */
+        background-image: url('https://files.catbox.moe/66v2hl.jpg');
+        background-size: cover; /* Cubre todo el espacio del contador */
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #countdown {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap; /* Ajuste en pantallas pequeñas */
+    }
+
+    .time {
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    .label {
+        font-size: 1.5em;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+        .time {
+            font-size: 2.5em; /* Tamaño más pequeño para móviles */
+        }
+
+        .label {
+            font-size: 1.2em; /* Reducir tamaño de las letras */
+        }
+
+        .countdown-section {
+            height: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+</style>
+
 <style id='wp-emoji-styles-inline-css'>
 img.wp-smiley, img.emoji {
 display: inline !important;
