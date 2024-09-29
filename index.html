@@ -2,9 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
 <!-- This site is optimized with the Yoast SEO plugin v23.1 - https://yoast.com/wordpress/plugins/seo/ -->
 <title>XV Rubi</title>
 <meta name="description" content="Te invito a celebrar mis XV años junto a mis padres, compartiendo la felicidad de este día tan especial" />
@@ -77,6 +76,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     .label {
         font-size: 1.5em;
     }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho total del elemento */
+}
+
+img, div {
+    max-width: 100%;
+    height: auto;
+}
 
     /* Estilos responsivos */
     @media (max-width: 768px) {
